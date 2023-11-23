@@ -1,0 +1,101 @@
+
+body{
+    background-image: url("./assets/imagenes/image.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-bakground-size: cover;
+    background-size: cover;
+}*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+main {
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
+  font-size: 100px;
+}
+
+.cronometro {
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    padding-top: 250px;
+  }
+
+  .centerList {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .cssBtnsModo {
+    margin-left: 100px;
+  }
+
+  .cssBtnsAcciones {
+    margin-left: 230px;
+  }
+
+  .btnRedondo {
+    border-radius: 1rem;
+    padding: 10px;
+  }
+
+  .btnRedondo2 {
+    border-radius: 1rem;
+    padding: 10px;
+    border: none;
+  }
+
+  .cssLista {
+    margin-left: 230px;
+  }
+
+  .li-container {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 216px;
+    color: white;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    border-radius: 10px;
+    display: flex;
+  }
+  
+  li p {
+    margin-right: auto;
+  }
+
+  .input {
+    background-color: transparent;
+    border: solid 1.5px white;
+    border-radius: 1rem;
+    padding: 10px;
+    color: white
+   }
+
+   .input:focus {
+    outline: none;
+   }
+
+   ::placeholder { color: rgb(255, 255, 255); }
+
+   .btnSwitch {
+    visibility: hidden
+   }
+
+   .empty {
+    color: white
+   }

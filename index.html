@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pomodoro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="codigo.js" defer></script>
+  <script src="lista.js" defer></script>
+</head>
+
+<body>
+  <div class="container center">
+    <!--MODO AUTOMATICO-->
+    <div class="form-check form-switch btnSwitch">
+      <input class="form-check-input" type="checkbox" id="switchAutomatico">
+      <label class="form-check-label" for="mySwitch">Modo Automatico</label>
+    </div>
+    <!--CRONOMETRO-->
+    <div class="cssBtnsModo">
+      <button class="btn btn-outline-dark btnRedondo" id="btnPomodoro" onclick="modoPomodoro()">Pomodoro</button>
+      <button class="btn btn-outline-dark btnRedondo" id="btnDescanso1" onclick="modoDescansoCorto()">Descanso Corto</button>
+      <button class="btn btn-outline-dark btnRedondo" id="btnDescanso2" onclick="modoDescansoLargo()">Descanso Largo</button>
+      <button class="btn btn-outline-dark btnRedondo" id="btnCronometro" onclick="modoCronometro()">Cronometro</button>
+    </div>
+
+    <main>
+      <div id="lblCronometro" class="cronometro">25:00</div>
+    </main>
+
+    <div class="cssBtnsAcciones">
+      <button class="btn btn-outline-light btnRedondo" id="btnStart" onclick="start()">Empezar</button>
+      <button class="btn btn-outline-light btnRedondo" id="btnPause" onclick="pause()">Pausar</button>
+      <button class="btn btn-outline-light btnRedondo" id="btnStop" onclick="stopp()">Detener</button>
+    </div>
+  </div>
+
+  <!--LISTA DE TAREAS-->
+  <div class="container centerList">
+    <div class="cssLista">
+      <div class="input-group mb-3">
+        <input class="input" type="text" id="inptTareas" placeholder="Agrega una tarea...">
+        <button class="btn btn-outline-light btn-sm input" id="btnAgregar">+</button>
+      </div>
+
+
+      <div class="li-container">
+        <ul id="liTareas">
+
+        </ul>
+      </div>
+      <div class="empty" id="vacio">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
